@@ -1,3 +1,4 @@
+// https://atcoder.jp/contests/abc086/tasks/abc086_a
 use proconio::input;
 
 fn main() {
@@ -5,7 +6,10 @@ fn main() {
         a: i32,
         b: i32,
     }
-    println!(" a {:p}", &a);
-    println!(" b {:p}", &b);
-    println!(" a + b {}", a + b);
+
+    if a * b % 2 == 0 {
+        println!("Even");
+    } else {
+        println!("Odd");
+    }
 }
